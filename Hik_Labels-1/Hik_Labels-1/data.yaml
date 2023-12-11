@@ -1,0 +1,13 @@
+names:
+- Barcode
+- Label
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: hik_labels
+  url: https://universe.roboflow.com/cos10-85pn0/hik_labels/dataset/1
+  version: 1
+  workspace: cos10-85pn0
+test: ../test/images
+train: Hik_Labels-1/train/images
+val: Hik_Labels-1/valid/images
