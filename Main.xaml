@@ -217,7 +217,7 @@
                   </Sequence>
                 </ui:InterruptibleDoWhile.Body>
               </ui:InterruptibleDoWhile>
-              <Sequence sap:VirtualizedContainerService.HintSize="814,12812.999999999998" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence sap:VirtualizedContainerService.HintSize="814,11693.000000000002" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="Casos_Pendientes" />
                 </Sequence.Variables>
@@ -340,13 +340,13 @@
                     <uix:TargetAnchorable BrowserURL="https://hikvision.my.xiaoshouyi.com/standard_455.action?belongId=455" CvElementArea="228, 261, 1668, 257" CvType="Table" DesignTimeRectangle="300, 327, 482, 38" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl parentname='mainColumn' tag='SPAN' /&gt;" Guid="838887ba-9eed-40d5-9ed3-7007b58bb4ec" InformativeScreenshot="690455ff563cd20df3a1c80ddb41b2ee.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Case-Xiaoshouyi' /&gt;" SearchSteps="CV" Version="V2" Visibility="Interactive" />
                   </uix:NExtractData.Target>
                 </uix:NExtractData>
-                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Casos_Pendientes]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="752,9016" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Casos_Pendientes]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="752,7896" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                   <ui:ForEachRow.Body>
                     <ActivityAction x:TypeArguments="sd:DataRow">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="718,8828" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="718,7708" sap2010:WorkflowViewState.IdRef="Sequence_16">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="Ticket_URL" />
                         </Sequence.Variables>
@@ -404,13 +404,13 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NKeyboardShortcuts>
-                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Restablezca la contraseña de administrador del dispositivo-C88518824-Xiaoshouyi" sap:VirtualizedContainerService.HintSize="676,7730" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f200c46f-219c-4499-a4bc-ddbbe907f87a" Version="V2">
+                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Restablezca la contraseña de administrador del dispositivo-C88518824-Xiaoshouyi" sap:VirtualizedContainerService.HintSize="676,6610" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f200c46f-219c-4499-a4bc-ddbbe907f87a" Version="V2">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,7472" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,6352" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="Ticket_Name" />
                                 </Sequence.Variables>
@@ -431,7 +431,7 @@
                                     </uix:TargetAnchorable>
                                   </uix:NGetText.Target>
                                 </uix:NGetText>
-                                <If Condition="[Ticket_Name.Contains(&quot;ERROR AL CERRAR&quot;, StringComparison.OrdinalIgnoreCase)]" sap:VirtualizedContainerService.HintSize="486,7159" sap2010:WorkflowViewState.IdRef="If_3">
+                                <If Condition="[Ticket_Name.Contains(&quot;ERROR AL CERRAR&quot;, StringComparison.OrdinalIgnoreCase)]" sap:VirtualizedContainerService.HintSize="486,6039" sap2010:WorkflowViewState.IdRef="If_3">
                                   <If.Then>
                                     <Sequence sap:VirtualizedContainerService.HintSize="376,1819" sap2010:WorkflowViewState.IdRef="Sequence_21">
                                       <sap:WorkflowViewStateService.ViewState>
@@ -500,7 +500,7 @@
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="452,5157" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="452,4037" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:String" Name="Image_URL" />
                                         <Variable x:TypeArguments="x:String" Name="Resultado" />
@@ -573,9 +573,9 @@
                                       </ui:InvokePowerShell>
                                       <Delay Duration="00:00:30" sap:VirtualizedContainerService.HintSize="410,91" sap2010:WorkflowViewState.IdRef="Delay_34" />
                                       <ui:ReadTextFile File="{x:Null}" Content="[Resultado]" DisplayName="Read Text File" FileName="Python_code\Results.txt" sap:VirtualizedContainerService.HintSize="410,81" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-                                      <If Condition="[Resultado = &quot;1&quot;]" sap:VirtualizedContainerService.HintSize="410,3028" sap2010:WorkflowViewState.IdRef="If_4">
+                                      <If Condition="[Resultado = &quot;1&quot;]" sap:VirtualizedContainerService.HintSize="410,1908" sap2010:WorkflowViewState.IdRef="If_4">
                                         <If.Then>
-                                          <Sequence sap:VirtualizedContainerService.HintSize="376,537" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                          <Sequence sap:VirtualizedContainerService.HintSize="376,1725" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -585,6 +585,60 @@
                                             <ui:DeleteFolderX DisplayName="Delete Folder" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="DeleteFolderX_4" Path="C:\Users\admin\Documents\UiPath\Rpa_Reset_eSales\eSales_Images" Recursive="True" />
                                             <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="C:\Users\admin\Documents\UiPath\Rpa_Reset_eSales\eSales_Images" />
                                             <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86" sap2010:WorkflowViewState.IdRef="MessageBox_15" Text="[&quot;serial Detectado - Terminar proceso y Cerrar Ticket&quot;]" />
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'HPPMessage'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_58" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f200c46f-219c-4499-a4bc-ddbbe907f87a" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://hikvision.my.xiaoshouyi.com/customize_detail.action?id=3080081663003244&amp;belongId=455" DesignTimeRectangle="231, 414, 110, 35" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'HPPMessage'" FullSelectorArgument="&lt;webctrl id='ui-id-7' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ui-id-7' tag='A' type='' class='ui-tabs-anchor' aaname='HPPMessage' check:innerText='HPPMessage' /&gt;" Guid="e094ca7b-ede9-4d2a-a362-cdea18c00b47" InformativeScreenshot="3ddbe4c06edd58724e724087dcbb69dc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restablezca la contraseña de administrador del dispositivo-E21074792-Xiaoshouyi' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Support Reply'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_59" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f200c46f-219c-4499-a4bc-ddbbe907f87a" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://hikvision.my.xiaoshouyi.com/customize_detail.action?id=3080081663003244&amp;belongId=455" DesignTimeRectangle="133, 488, 332, 28" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Support Reply'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='ui-multiselect ui-widget ui-state-default ui-corner-all' aaname='Support Reply' check:innerText='Support Reply' /&gt;" Guid="3dac07a4-dc85-4ef3-aebe-57541689ef03" InformativeScreenshot="4be4906c568ae43a5eef59c9db201ba1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restablezca la contraseña de administrador del dispositivo-E21074792-Xiaoshouyi' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                      <uix:Target DesignTimeRectangle="138, 493, 75, 16" ElementType="Text" FriendlyName="'Support Reply'" FullSelectorArgument="&lt;webctrl aaname='Support Reply' parentid='activityrecord_dbcSelect3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Support Reply' parentid='activityrecord_dbcSelect3' tag='SPAN' type='' class='' check:innerText='Support Reply' /&gt;" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Support Reply'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_60" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f200c46f-219c-4499-a4bc-ddbbe907f87a" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://hikvision.my.xiaoshouyi.com/customize_detail.action?id=3080081663003244&amp;belongId=455" DesignTimeRectangle="140, 574, 67, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Support Reply'" FullSelectorArgument="&lt;webctrl aaname='Support Reply' css-selector='body&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;label&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Support Reply' type='' tag='SPAN' class='' check:innerText='Support Reply' /&gt;" Guid="06c6a8bc-4cb2-4a39-b463-d81c792c8255" InformativeScreenshot="c2b7b4138dc9e8d41f2357c73efb44a7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restablezca la contraseña de administrador del dispositivo-E21074792-Xiaoshouyi' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                      <uix:Target DesignTimeRectangle="134, 569, 245, 26" ElementType="Text" FriendlyName="'checked'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;label' idx='3' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='ui-corner-all ui-state-active' tag='LABEL' aaname='' check:innerText='Support Reply' /&gt;" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Double-click 'Post'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_61" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f200c46f-219c-4499-a4bc-ddbbe907f87a" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://hikvision.my.xiaoshouyi.com/customize_detail.action?id=3080081663003244&amp;belongId=455" DesignTimeRectangle="865, 886, 62, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Post'" FullSelectorArgument="&lt;webctrl class='rk-sent-btn' parentid='rkActivityTabs' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='rk-sent-btn' parentid='rkActivityTabs' tag='A' type='' aaname='Post' check:innerText='Post' /&gt;" Guid="19e2ef11-9357-46bb-a75b-2c0ad9226903" InformativeScreenshot="b2f094428c02c5b3bf84c44327ffbe42.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restablezca la contraseña de administrador del dispositivo-E21074792-Xiaoshouyi' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                      <uix:Target DesignTimeRectangle="8, 878, 942, 40" FriendlyName="'* Image'" FullSelectorArgument="&lt;webctrl class='rk-sent' parentid='rkActivityTabs' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='rk-sent' parentid='rkActivityTabs' tag='DIV' type='' aaname='   ' check:innerText='Save as Draft Post' /&gt;" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Closed Application'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_62" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f200c46f-219c-4499-a4bc-ddbbe907f87a" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://hikvision.my.xiaoshouyi.com/customize_detail.action?id=3080081663003244&amp;belongId=455" DesignTimeRectangle="1744, 222, 105, 32" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Closed Application'" FullSelectorArgument="&lt;webctrl aaname='Closed Application EP/TPP' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Closed Application EP/TPP' tag='A' type='' class='xsy_buttonbar_link     ' check:innerText='Closed Application EP/TPP' /&gt;" Guid="8fb942cd-d348-46df-8ee5-aa3855bfc510" InformativeScreenshot="3cf0b6cd6fd1c332c18f7b72da8412b8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restablezca la contraseña de administrador del dispositivo-E21074792-Xiaoshouyi' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Confirm'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_63" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f200c46f-219c-4499-a4bc-ddbbe907f87a" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://lapp-p09.xiaoshouyi.com/static/6b07/86b3/closecase/index.html?objectId=455&amp;recordId=3080081663003244&amp;imei=null&amp;appVersion=null&amp;model=null&amp;platform=null&amp;systemVersion=null&amp;objectIds=null" DesignTimeRectangle="1228, 811, 120, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Confirm'" FullSelectorArgument="&lt;webctrl src='/json/global_redirect/proxy.action?access_token=0e2247f907de0ed1*' tag='IFRAME' /&gt;&lt;webctrl id='confirmButton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl src='/json/global_redirect/proxy.action?access_token=0e2247f907de0ed1*' tag='IFRAME' /&gt;&lt;webctrl id='confirmButton' tag='BUTTON' type='button' class='el-button el-button--primary' aaname='Confirm' check:innerText='Confirm' /&gt;" Guid="8537bc46-c2ec-4d1a-846f-ed0b922a082f" InformativeScreenshot="ff2bdbeb9521fd351ca7ac3d420cdeea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restablezca la contraseña de administrador del dispositivo-E21074792-Xiaoshouyi' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                      <uix:Target DesignTimeRectangle="1263, 823, 49, 16" ElementType="Text" FriendlyName="'Confirm'" FullSelectorArgument="&lt;webctrl src='/json/global_redirect/proxy.action?access_token=0e2247f907de0ed1*' tag='IFRAME' /&gt;&lt;webctrl parentid='confirmButton' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl src='/json/global_redirect/proxy.action?access_token=0e2247f907de0ed1*' tag='IFRAME' /&gt;&lt;webctrl parentid='confirmButton' tag='SPAN' type='' class='' aaname='Confirm' check:innerText='Confirm' /&gt;" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
                                           </Sequence>
                                         </If.Then>
                                         <If.Else>
