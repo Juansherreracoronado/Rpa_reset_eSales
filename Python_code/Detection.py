@@ -9,7 +9,7 @@ import shutil
 start = time.time()
 
 folderpath = r'C:\Users\admin\Documents\UiPath\Rpa_Reset_eSales\eSales_Images'
-barcode_folder_path = r'C:\Users\admin\Documents\Rpa\runs\detect\predict\crops\Barcode'
+barcode_folder_path = r'C:\Users\admin\Documents\UiPath\Rpa_Reset_eSales\Python_code\runs\detect\predict\crops\Barcode'
 file_path = r'C:\Users\admin\Documents\UiPath\Rpa_Reset_eSales\Python_code\esales_Form_Data.txt'
 
 #Cargar variables de entorno (APIs, claves... etc)
@@ -46,7 +46,7 @@ with open(file_path, 'r') as file:
     if matches:
         for match in matches:
             serial_number = match
-    pattern = re.compile(r'ticket\s*number:\s*(\d+)', re.DOTALL | re.IGNORECASE)
+    pattern = re.compile(r'ticket\s*number:\s*([^\n\r]+)', re.DOTALL | re.IGNORECASE)
     matches = pattern.findall(content)
     if matches:
         for match in matches:
